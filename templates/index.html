@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+    <nav>
+        <button onclick="location.href='/settings.html'">Settings</button>
+    </nav>
+    <div class="content">
+        <div class="news-feed">
+            {% for category, titles in news.items() %}
+                <div class="category" style="border-left: 5px solid {{ loop.cycle('red', 'blue', 'green', 'yellow') }}">
+                    <h2>{{ category }}</h2>
+                    <ul>
+                        {% for title in titles %}
+                            <li>{{ title }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="ticker-data">
+            {% for ticker, data in ticker_data.items() %}
+                <div class="ticker">
+                    <h3>{{ ticker }}</h3>
+                    <p>Previous Close: {{ data.previous_close }}</p>
+                    <p>Open: {{ data.open }}</p>
+                    <p>Day Range: {{ data.day_range }}</p>
+                    <p>Week Range: {{ data.week_range }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

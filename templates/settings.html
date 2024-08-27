@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+</head>
+<body>
+    <h1>Settings</h1>
+    <form method="POST">
+        <h2>Categories</h2>
+        <input type="text" name="categories" value="{{ ','.join(categories) }}">
+        <h2>Tickers</h2>
+        <input type="text" name="tickers" value="{{ ','.join(tickers) }}">
+        <button type="submit">Save</button>
+    </form>
+    <button onclick="location.href='/index.html'">Back</button>
+</body>
+</html>

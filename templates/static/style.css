@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+}
+
+.news-feed {
+    flex: 2;
+    padding: 10px;
+}
+
+.ticker-data {
+    flex: 1;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+}
+
+.category {
+    margin-bottom: 20px;
+}
+
+.ticker {
+    margin-bottom: 20px;
+}

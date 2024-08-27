@@ -1,0 +1,12 @@
+A web app using above functions.
+
+Initial setup:
+    Provide list of categories of interest to choose from for the main feed
+        Store them in a place
+    Ask for list of ticker names for the comnpanies they want to follow the quotation for. 
+        Store them in a place
+
+When you open:
+Render the list of titles of news from the categories they selected, colored categorically. Also render on the right 1/3rd of the screen the previous close, open , day range, week range values for the companies ticker they want to follow. 
+Also give a button on top nav bar which opens a list of categories that they can select to see those headlines. Also provide button to add or delete the list of comany tickers from the store.
+    
